@@ -19,7 +19,7 @@ public class scietificcalculator extends JFrame implements ActionListener {
 
         displayTextField = new JTextField();
         displayTextField.setEditable(false);
-        displayTextField.setFont(new Font("Arial", Font.BOLD, 24)); // Set the desired font size for the result
+        displayTextField.setFont(new Font("Arial", Font.BOLD, 24)); 
         add(displayTextField, BorderLayout.NORTH);
 
         JPanel buttonPanel = new JPanel();
@@ -34,7 +34,7 @@ public class scietificcalculator extends JFrame implements ActionListener {
                 "x^y", "log", "ln", "pi", "MR+"
         };
 
-        Font buttonFont = new Font("Arial", Font.BOLD, 18); // Set the desired font size and style for the buttons
+        Font buttonFont = new Font("Arial", Font.BOLD, 18); 
 
         for (String label : buttonLabels) {
             JButton button = new JButton(label);
@@ -45,7 +45,7 @@ public class scietificcalculator extends JFrame implements ActionListener {
 
         add(buttonPanel, BorderLayout.CENTER);
         pack();
-        setSize(500, 500); // Set the desired dimensions for the frame
+        setSize(500, 500); 
         setLocationRelativeTo(null);
         setVisible(true);
     }
